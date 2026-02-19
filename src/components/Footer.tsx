@@ -1,21 +1,41 @@
-// components/Footer.tsx
+import Container from "./Container";
+import { profile } from "@/content/profile";
+
 export default function Footer() {
 	return (
-		<footer className="border-t bg-white">
-			<div className="mx-auto max-w-7xl px-4 py-10 text-sm text-neutral-600 flex flex-col md:flex-row items-center justify-between gap-4">
-				<p>
-					© {new Date().getFullYear()} Elevate DevWorks • Founded by
-					Chris Owens
-				</p>
-				<div className="flex gap-4">
-					<a href="/privacy" className="hover:opacity-70">
-						Privacy
+		<Container>
+			<div
+				className="muted"
+				style={{
+					borderTop: "1px solid var(--hairline)",
+					paddingTop: 18,
+					display: "flex",
+					justifyContent: "space-between",
+					gap: 12,
+					flexWrap: "wrap",
+				}}
+			>
+				<span>
+					© {new Date().getFullYear()} {profile.name}
+				</span>
+				<span style={{ display: "flex", gap: 12 }}>
+					<a href={`mailto:${profile.links.email}`}>Email</a>
+					<a
+						href={profile.links.github}
+						target="_blank"
+						rel="noreferrer"
+					>
+						GitHub
 					</a>
-					<a href="/terms" className="hover:opacity-70">
-						Terms
+					<a
+						href={profile.links.linkedin}
+						target="_blank"
+						rel="noreferrer"
+					>
+						LinkedIn
 					</a>
-				</div>
+				</span>
 			</div>
-		</footer>
+		</Container>
 	);
 }
