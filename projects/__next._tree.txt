@@ -1,0 +1,5 @@
+:HL["/_next/static/chunks/a5cc61ec84c4af52.css","style"]
+:HL["/projects/clearpath-1200.webp","image"]
+:HL["/projects/greenscape-1200.webp","image"]
+:HL["/projects/invoiceways-1200.webp","image"]
+0:{"buildId":"4jKj0akTgto4HCJ-jvMpR","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"projects","paramType":null,"paramKey":"projects","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
