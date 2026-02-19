@@ -1,12 +1,6 @@
-// components/Container.tsx
-type Props = { children: React.ReactNode; className?: string };
-
-export default function Container({ children, className = "" }: Props) {
-	// Wider side padding + a touch narrower max width for more whitespace.
+export default function Container({ children }: { children: React.ReactNode }) {
 	return (
-		<div
-			className={`mx-auto max-w-6xl px-6 md:px-10 lg:px-12 ${className}`}
-		>
+		<div style={{ maxWidth: 1100, margin: "0 auto", padding: "28px 18px" }}>
 			{children}
 		</div>
 	);
