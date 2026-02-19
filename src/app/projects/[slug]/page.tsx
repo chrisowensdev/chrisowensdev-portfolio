@@ -1,12 +1,36 @@
 import Container from "@/components/Container";
 import Pill from "@/components/Pill";
 import { projects, getProject } from "@/content/projects";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
 	return projects.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({
+	params,
+}: {
+	params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+	const { slug } = await params;
+	const project = getProject(slug);
+
+	if (!project) return { title: "Project" };
+
+	return {
+		title: project.title,
+		description: project.blurb,
+		openGraph: {
+			title: project.title,
+			description: project.blurb,
+			type: "article",
+			// If you set metadataBase in layout, this can be relative:
+			images: project.image ? [{ url: project.image }] : undefined,
+		},
+	};
 }
 
 export default async function ProjectDetailPage({
