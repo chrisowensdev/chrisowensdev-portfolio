@@ -29,6 +29,7 @@ body {
 			transparent 50%
 		),
 		var(--bg);
+	background-repeat: no-repeat;
 	color: var(--text);
 	font-family:
 		ui-sans-serif,
