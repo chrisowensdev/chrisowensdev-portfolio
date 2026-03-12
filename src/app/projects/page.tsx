@@ -1,8 +1,12 @@
 import Container from "@/components/Container";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/content/projects";
+import type { Metadata } from "next";
 
-export const metadata = { title: "Projects — Chris Owens" };
+export const metadata: Metadata = {
+	title: "Projects",
+	description: "Selected projects and shipped work by Chris Owens.",
+};
 
 export default function ProjectsPage() {
 	return (
