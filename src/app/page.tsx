@@ -130,15 +130,10 @@ export default function HomePage() {
 									flexWrap: "wrap",
 								}}
 							>
-								{items.map((s) => (
-									<span
-										key={s}
-										style={{
-											borderBottom:
-												"1px dotted var(--hairline)",
-										}}
-									>
-										{s}
+								{items.map((skill, index) => (
+									<span key={skill}>
+										{skill}
+										{index < items.length - 1 ? "," : ""}
 									</span>
 								))}
 							</div>

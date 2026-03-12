@@ -17,6 +17,7 @@ export const profile = {
 			"TypeScript",
 			"Tailwind/CSS",
 			"Accessibility",
+			"WordPress",
 		],
 		Backend: ["Node.js", "REST APIs", "Auth", "SQL basics"],
 		Delivery: ["SEO basics", "Performance/LCP", "Git", "Deployments"],
