@@ -75,6 +75,34 @@ export const projects: Project[] = [
 		links: [{ label: "Website", href: "https://invoiceways.com" }],
 		image: "/projects/invoiceways-1200.webp",
 	},
+	{
+		slug: "peak-performance",
+		title: "Peak Performance HVAC - WordPress",
+		blurb: "Conversion-focused local service website built with WordPress, Gutenberg, a custom child theme, and a custom emergency call plugin.",
+		description: [
+			"Peak Performance is a demo HVAC website built to showcase a clean, maintainable WordPress implementation for local service businesses.",
+			"The project focuses on reusable page structures, lightweight Gutenberg layouts, and a custom Astra child theme to avoid heavy page builders while maintaining design consistency.",
+			"A small custom plugin was also created to add a configurable emergency call bar using WordPress hooks and the Settings API.",
+		],
+		role: "Design + Development",
+		stack: [
+			"WordPress",
+			"Astra Theme",
+			"Gutenberg",
+			"Custom Child Theme",
+			"PHP",
+			"Custom Plugin",
+		],
+		highlights: [
+			"Reusable service-page template system (AC Repair, Heating Repair, Maintenance)",
+			"Custom Astra child theme for consistent spacing, layout rules, and responsive styling",
+			"Custom emergency call bar plugin using WordPress hooks and admin settings",
+			"Gutenberg block patterns used to speed up page creation and maintain layout consistency",
+			"Conversion-focused layout for local service businesses (clear CTAs, service hierarchy)",
+		],
+		links: [{ label: "Live Demo", href: "https://your-demo-url.com" }],
+		image: "/projects/peak-performance-1200.webp",
+	},
 ];
 
 export function getProject(slug: string) {

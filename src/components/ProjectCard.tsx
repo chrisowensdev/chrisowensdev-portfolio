@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 						alt={`${project.title} preview`}
 						style={{
 							width: "100%",
-							height: 210,
+							height: 180,
 							objectFit: "cover",
 							display: "block",
 						}}
