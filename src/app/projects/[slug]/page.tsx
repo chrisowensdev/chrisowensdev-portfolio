@@ -82,7 +82,7 @@ export default async function ProjectDetailPage({
 								alt={`${project.title} preview`}
 								style={{
 									width: "100%",
-									height: 600,
+
 									objectFit: "cover",
 									display: "block",
 								}}
